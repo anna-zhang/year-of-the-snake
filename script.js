@@ -62,7 +62,6 @@ function typeWriterEffect (elements, textArray, speed) {
     } else {
       // Once typing is complete, fade in the arrow
       fadeInArrow()
-      if (callback) callback() // Call the callback function after effect is complete
     }
   }
 

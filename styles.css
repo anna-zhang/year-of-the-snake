@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body, button, input {
+    font-family: "verveine", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+p {
+    font-size: large;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+section {
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.greeting {
+    background-color: #f9f9f9;
+}
+
+.resolutions {
+    background-color: #f1f1f1;
+}
+
+.svg-container {
+    margin: 50px 0;
+}
+
+.responsive-svg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.scroll-down, .scroll-to-top {
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.scroll-down p, .scroll-to-top p {
+    margin: 0;
+    font-size: 50px;
+}
+
+.preset-resolutions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.resolution {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.resolution:hover {
+    background-color: #45a049;
+}
+
+.custom-resolution input {
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.custom-resolution button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.added-resolutions {
+    margin-top: 20px;
+}
+
+#resolutionList {
+    list-style-type: none;
+}
+
+#resolutionList li {
+    font-size: 18px;
+    padding: 8px;
+    background-color: #e1f5e1;
+    margin: 5px 0;
+    border-radius: 5px;
+}

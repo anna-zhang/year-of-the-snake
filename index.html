@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Year of the Snake</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/hmk0ont.css">
+</head>
+<body>
+   <!-- First Section: Greeting -->
+   <section class="greeting" id="greeting">
+    <div class="greeting-content">
+      <h1>NEW YEAR, NEW ME</h1>
+      <h2>(take two!)</h2>
+      
+      <div class="svg-container">
+        <img src="assets/snake-illustration.svg" alt="hand-drawn snake illustration" class="responsive-svg">
+      </div>
+
+      <h2>Happy Lunar New Year!</h2>
+      <br>
+      <p>New Year's resolutions didn't last?</p>
+      <p>Let's call it a trial run. Now it's the real deal. </p>
+        
+      
+      <!-- Down Arrow to Scroll to Resolutions -->
+      <div class="scroll-down" onclick="scrollToResolutions()">
+        <p>&#x2193;</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Second Section: Resolutions -->
+  <section class="resolutions" id="resolutions">
+    <div class="resolutions-content">
+      <h2>Your Resolutions</h2>
+      <div class="added-resolutions">
+        <ul id="resolutionList"></ul>
+      </div>
+      <br>
+      <div class="custom-resolution">
+        <input type="text" id="customResolution" placeholder="Add your own resolution">
+        <button onclick="addCustomResolution()">add resolution</button>
+      </div>
+      <br>
+      <div class="preset-resolutions">
+        <h3>Some ideas:</h3>
+        <button class="resolution" onclick="addResolution('Exercise more')">Exercise more</button>
+        <button class="resolution" onclick="addResolution('Eat healthier')">Eat healthier</button>
+        <button class="resolution" onclick="addResolution('Travel to a new country or city')">Travel to a new country or city</button>
+        <button class="resolution" onclick="addResolution('Start a journal')">Start a journal</button>
+        <button class="resolution" onclick="addResolution('Get outdoors more')">Get outdoors more</button>
+      </div>
+
+      <!-- Button to scroll back to the top -->
+      <div class="scroll-to-top" onclick="scrollToTop()">
+        <p>&#x2191;</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

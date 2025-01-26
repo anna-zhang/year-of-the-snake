@@ -118,3 +118,23 @@ section {
     margin: 5px 0;
     border-radius: 5px;
 }
+
+/* Initially hide the arrow */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Fade-in effect */
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
